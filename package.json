@@ -1,0 +1,21 @@
+{
+  "name": "bot-luis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bacate Dev",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-table": "^0.0.9",
+    "discord-html-transcripts": "^3.1.2",
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "figlet": "^1.5.2",
+    "fs": "^0.0.1-security",
+    "mysql2": "^3.1.2",
+    "sequelize": "^6.29.0"
+  }
+}
