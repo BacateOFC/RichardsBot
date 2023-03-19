@@ -34,6 +34,8 @@ module.exports = {
 }
 
 const dotenv = require('dotenv')
+const { announcement } = require('./events/announcement-modal')
+const { anr } = require('./slashcommands/moderation/announcment')
 const envFile = dotenv.config();
 const token = process.env['token']
 client.slashcommands = new Discord.Collection()
@@ -41,6 +43,7 @@ client.slashcommands = new Discord.Collection()
 client.on("ready", () => {
     console.log(`${client.user.tag} is ready!`)
     client.warn.sync()
+    announcement.sync()
     client.user.setStatus('online')  
 });
 
