@@ -20,7 +20,7 @@ figlet.text('Bacate Dev', function(error, data) {
 
 //DataBase Connection
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('DB_NAME', 'USERNAME', 'PASSWORD', {
+const sequelize = new Sequelize('rbot', 'bot', '123456789', {
 	host: 'localhost',
 	dialect: 'mysql',
 	logging: false,
